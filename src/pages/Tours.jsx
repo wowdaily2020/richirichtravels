@@ -24,13 +24,13 @@ export default function Tours() {
       <h1 className="text-2xl font-bold mb-6">Tours</h1>
       <div className="grid md:grid-cols-3 gap-6">
         {tours.map((t, i) => (
-          <div key={i} className="border rounded-2xl p-5">
+          <div key={i} className="border border-white/10 bg-white/5 rounded-2xl p-5 backdrop-blur">
             <div className="font-semibold">{t.name}</div>
-            <ul className="text-sm text-gray-600 mt-2 list-disc pl-5">
+            <ul className="text-sm text-slate-300 mt-2 list-disc pl-5">
               {t.highlights.map((h, hi) => <li key={hi}>{h}</li>)}
             </ul>
-            <div className="mt-3 text-sm font-medium">{t.price}</div>
-            <a href="/contact" className="mt-4 inline-block px-4 py-2 rounded-full bg-gray-900 text-white text-sm">Request Quote</a>
+            <div className="mt-3 text-sm font-medium text-amber-300">{t.price}</div>
+            <a href="/contact" className="mt-4 inline-block px-4 py-2 rounded-full bg-brand-500 hover:bg-brand-400 text-ink text-sm">Request Quote</a>
           </div>
         ))}
       </div>

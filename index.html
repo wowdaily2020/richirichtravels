@@ -3,13 +3,50 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Richirich Travels – Gujarat Tours & Cab Service</title>
-    <meta name="description" content="Richirich Travels offers Innova and premium cab services, family and corporate tours across Gujarat. Safe drivers, clean vehicles, fair pricing." />
+    <title>Richirich Travels – Premium Gujarat Tours & Cabs</title>
+    <meta name="description" content="Premium Innova & cab services for Gujarat tours, airports, and business trips. Clean cars, professional drivers, transparent pricing." />
     <link rel="icon" type="image/png" href="/logo.png" />
-    <!-- Tailwind (CDN for simplicity) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <!-- Tailwind (CDN) -->
     <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: { display: ['Plus Jakarta Sans', 'ui-sans-serif','system-ui'] },
+            colors: {
+              brand: {
+                50: '#fff6e6',
+                100: '#ffe7bf',
+                200: '#ffd48c',
+                300: '#ffc159',
+                400: '#ffb02e',
+                500: '#f59e0b', // accent
+                600: '#d97706',
+                700: '#b45309',
+                800: '#92400e',
+                900: '#78350f'
+              },
+              ink: '#0b1220',  // deep navy background
+              inkSoft: '#0f172a'
+            },
+            boxShadow: {
+              glow: '0 10px 30px rgba(245, 158, 11, .25)'
+            },
+            backgroundImage: {
+              'hero-gradient': 'radial-gradient(1200px 600px at 10% -10%, rgba(245,158,11,.25), transparent 60%), radial-gradient(800px 400px at 90% 10%, rgba(59,130,246,.15), transparent 60%)'
+            }
+          }
+        }
+      }
+    </script>
+    <style>
+      html, body { background-color: #0b1220; }
+    </style>
   </head>
-  <body class="bg-white text-gray-800">
+  <body class="text-slate-100 font-display antialiased">
     <div id="root"></div>
     <script type="module" src="/src/main.jsx"></script>
   </body>

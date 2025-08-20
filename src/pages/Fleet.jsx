@@ -13,10 +13,10 @@ export default function Fleet() {
       <h1 className="text-2xl font-bold mb-6">Our Fleet</h1>
       <div className="grid md:grid-cols-4 gap-6">
         {cars.map((c, i) => (
-          <div key={i} className="border rounded-2xl p-5 bg-white">
+          <div key={i} className="border border-white/10 rounded-2xl p-5 bg-white/5 backdrop-blur">
             <div className="font-semibold">{c.name}</div>
-            <div className="text-sm text-gray-600 mt-2">Seats: {c.seats} • Bags: {c.bags} • AC: {c.ac ? 'Yes' : 'No'}</div>
-            <div className="mt-3 text-xs text-gray-500">Clean interiors • Music system • Sanitized</div>
+            <div className="text-sm text-slate-300 mt-2">Seats: {c.seats} • Bags: {c.bags} • AC: {c.ac ? 'Yes' : 'No'}</div>
+            <div className="mt-3 text-xs text-slate-400">Clean interiors • Music system • Sanitized</div>
           </div>
         ))}
       </div>
